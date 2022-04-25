@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/b7370c5621.js" crossorigin="anonymous">
+  </script>
+
+  <title>Report Hours</title>
+</head>
+<body>
+  <div class="container">
+    <div class="grid-container">
+      <div class="profile-container">
+        <div class="profile-content">
+        <figure class="profile-img">
+          <img src="./img/foto2.jpg" alt="">
+        </figure>
+        <div class="profile-txt">
+          <p class="mini-txt">Report for</p>
+          <p class="name-txt">Jeremy <br> Robson</p>
+        </div>
+        </div>
+        <div class="info-content">
+          <a onclick="getReportDaily()" href="#daily" id="daily" class="btn-active">Daily</a>
+          <a onclick="getReportWeekly()" href="#weekly" id="weekly"  class="btn-active">Weekly</a>
+          <a onclick="getReportMonthly()" href="#monthly" id="monthly" class="btn-active">Monthly</a>
+        </div>
+      </div>
+      <div class="size-container work-container">
+        <div class="size-content">
+          <div class="title-orientation">
+            <p id="work-title"></p>
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+          <div class="hours-orientation">
+            <p id="work-curr" class="font-size-hours"></p>
+            <p id="work-prev" class="color-font"></p>
+          </div>
+        </div>
+      </div>
+      <div class="size-container play-container">
+        <div class="size-content">
+          <div class="title-orientation">
+            <p id="play-title"></p>
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+          <div class="hours-orientation">
+            <p id="play-curr" class="font-size-hours"></p>
+            <p id="play-prev" class="color-font"></p>
+          </div>
+        </div>
+      </div>
+      <div class="size-container study-container">
+        <div class="size-content">
+          <div class="title-orientation">
+            <p id="study-title"></p>
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+          <div class="hours-orientation">
+            <p id="study-curr" class="font-size-hours"></p>
+            <p id="study-prev" class="color-font"></p>
+          </div>
+        </div>
+      </div>
+      <div class="size-container excercise-container">
+        <div class="size-content">
+          <div class="title-orientation">
+            <p id="excercise-title"></p>
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+          <div class="hours-orientation">
+            <p id="excercise-curr" class="font-size-hours"></p>
+            <p id="excercise-prev" class="color-font"></p>
+          </div>
+        </div>
+      </div>
+      <div class="size-container social-container">
+        <div class="size-content">
+          <div class="title-orientation">
+            <p id="social-title"></p>
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+          <div class="hours-orientation">
+            <p id="social-curr" class="font-size-hours"></p>
+            <p id="social-prev" class="color-font"></p>
+          </div>
+        </div>
+      </div>
+      <div class="size-container self-care-container">
+        <div class="size-content">
+          <div class="title-orientation">
+            <p id="self-care-title"></p>
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+          <div class="hours-orientation">
+            <p id="self-care-curr" class="font-size-hours"></p>
+            <p id="self-care-prev" class="color-font"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
